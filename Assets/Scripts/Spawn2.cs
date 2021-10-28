@@ -11,7 +11,7 @@ public class Spawn2 : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject cube = PoolManager.sharedInstance.GetObjectFromPool(spawnPoint.position, spawnPoint.rotation);
+            GameObject cube = PoolManager.sharedInstance.GetObjectFromPool(spawnPoint.position, spawnPoint.rotation,"2");
             Rigidbody rb = cube.GetComponent<Rigidbody>();
             rb.AddForce(spawnPoint.up * cubeForce, ForceMode.Impulse);
         }

@@ -5,13 +5,13 @@ using UnityEngine;
 public class Cube2 : MonoBehaviour
 {
     public float lifeTime = 3.0f;
-    /*void Update()
+    void Update()
     {
         if (lifeTime < 0.0f)
         {
-            PoolManager2.sharedInstance.ReturnObjToPool2(this.gameObject);
+            PoolManager.sharedInstance.ReturnObjToPool(this.gameObject);
             lifeTime = 3.0f;
         }
         lifeTime -= Time.deltaTime;
-    }*/
+    }
 }

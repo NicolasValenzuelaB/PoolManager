@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 603441984}
   - component: {fileID: 603441985}
   - component: {fileID: 603441986}
+  - component: {fileID: 603441987}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -167,10 +168,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87ac378ac3ccde438846181ad4e6f38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolSize: 50
+  poolSize: 5
   lista:
   - {fileID: 5850931303742760782, guid: 9ddd8cad8e353da419728809fcf7c1d8, type: 3}
   - {fileID: 4724628234707937094, guid: 6e2b69597fe506d4f9b27697f811096d, type: 3}
+  lista2: []
+  cube: []
+  cube2: []
+  contadorCube: 0
+  contadorCube2: 0
 --- !u!114 &603441986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +191,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 603441984}
   cubePrefab: {fileID: 5850931303742760782, guid: 9ddd8cad8e353da419728809fcf7c1d8, type: 3}
+  cubeForce: 3
+--- !u!114 &603441987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603441983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7bea9165b7564f4fbdec58960239987, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 603441984}
+  cubePrefab: {fileID: 4724628234707937094, guid: 6e2b69597fe506d4f9b27697f811096d, type: 3}
   cubeForce: 3
 --- !u!1 &705507993
 GameObject:
