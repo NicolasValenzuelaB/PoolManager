@@ -169,10 +169,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolSize: 5
-  lista:
+  listPrefab:
   - {fileID: 5850931303742760782, guid: 9ddd8cad8e353da419728809fcf7c1d8, type: 3}
   - {fileID: 4724628234707937094, guid: 6e2b69597fe506d4f9b27697f811096d, type: 3}
-  lista2: []
+  listPrefabClone: []
   cube: []
   cube2: []
   contadorCube: 0
@@ -192,6 +192,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 603441984}
   cubePrefab: {fileID: 5850931303742760782, guid: 9ddd8cad8e353da419728809fcf7c1d8, type: 3}
   cubeForce: 3
+  contador: 0
 --- !u!114 &603441987
 MonoBehaviour:
   m_ObjectHideFlags: 0
